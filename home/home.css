@@ -1,0 +1,720 @@
+
+/*
+      css for home page below
+*/
+body{
+
+  
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .header {
+      font-size: 20em;
+      text-align: center; 
+      padding: 10px 0;
+      background-color: yellow;
+      font-family: 'Times New Roman', Times, serif;
+      position: relative;
+  }
+  .profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    position: relative;
+    top: -13px;
+    border: none;
+    outline: none;
+    background: none;
+    box-shadow: none; /* Removes any shadow */
+}
+
+.profile-img:hover,
+.profile-img:focus {
+    filter: brightness(90%);
+    outline: none;
+    box-shadow: none;
+    background: none;
+}
+
+
+
+  .header img{
+    position: absolute;  /* Keeps it positioned within the header */
+    top: 50%;  /* Centers the logo vertically */
+    left: 0px;  /* Adjust left if you need more space from the edge */
+    transform: translateY(-50%);  /* Adjusts for the logo's height */
+    height: 100%;  /* Set the height of the logo to fill the height of the header */
+    width: auto;  /* Keep the aspect ratio of the logo */
+  }
+  h1 {
+    margin: 0; /* Removes default margin to prevent shifting */
+  }
+  .header h1 {
+    font-size: 30px;
+    color: #000000;
+  }
+  
+  .topnav {
+    background-color: #000000;
+    overflow: hidden;
+    padding: 10px;
+    align-items:  center;
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  
+  
+  
+  a:hover{
+    background-color: #c4bfbfe2;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .news-input {
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+  
+  }
+  
+  .search-button {
+    background-color: #fff;
+    color: #00bfff;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 38px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #f4511e;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #1976d2;
+  }
+  .search-button:hover{
+    background-color: rgb(153, 231, 224);
+  }
+  
+  .profile-img {
+    width: 40px; /* Adjust as needed */
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  h2{
+    text-align: center;
+    color: #000000;
+  }
+  
+  .buttons{
+    background-color: #000000;
+    overflow: hidden;
+    align-items: center ;
+    display: flex;
+    justify-content: space-between;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 155px;
+    height: 100px;
+    color: #fff;  
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .save:hover{
+    background-color: #c4bfbfe2;
+  }
+
+  
+  .container {
+    display: flex;
+    gap: 20px;
+    max-width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 65px;
+  }
+  
+  .news-box {
+    width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .title {
+    font-weight: bold;
+    background-color: #ccc;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  /* Gradient backgrounds */
+  .economic-times { 
+    background: linear-gradient(45deg, #e9d44b, #ff5722); /* Orange to Red */
+  } 
+  .the-hindu { 
+    background: linear-gradient(45deg, #af84f9, #512da8); /* Purple to Dark Purple */
+  } 
+  
+  .times-of-india { 
+    background: linear-gradient(45deg, #ff3232, #ff0000); /* Bright Red to Dark Red */
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin: 10px 0;
+  }
+  
+  .news-box {
+    width: 300px;
+    height: 330px;  /* Fixed height to fit at least 4 headlines */
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    overflow: hidden;  /* Prevents overflow */
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+  
+  .news-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;  /* Allows scrolling if content overflows */
+    max-height: 350px;  /* Ensures the list fits inside the box */
+  }
+  
+  .news-box ul li {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .news-box ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .news-box ul li a:hover {
+    color: #ff5722;
+  }
+  
+  .news-box ul li::before {
+    content: "• ";  /* Unicode bullet character */
+    color: black;  /* Adjust color if needed */
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;  /* Allows wrapping to the next row */
+    justify-content: center;  /* Centers the items */
+    gap: 20px;  /* Adds space between items */
+    max-width: 90%;
+    margin: 25px auto;
+  }
+  
+  .news-box {
+    width: calc(33.33% - 20px);  /* Each box takes one-third of the row */
+    min-height: 180px;  /* Ensures enough space for at least 4 headlines */
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  /* Make it responsive for smaller screens */
+  @media (max-width: 768px) {
+    .news-box {
+        width: calc(33.33% - 20px);  /* Two per row on tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .news-box {
+        width: 100%;  /* One per row on mobile */
+    }
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 95%;
+    margin: auto;
+    gap: 20px;
+  }
+  
+  /* Top Row: Carousel Effect */
+  .top-row {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px 0;
+    max-width: 100%;
+  }
+  
+  .top-row::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .news-box {
+    min-width: 320px;
+    height: 280px;
+    background: rgba(252, 6, 6, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    scroll-snap-align: start;
+  }
+  
+  .news-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Bottom Row: Staggered Grid */
+  .bottom-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .title {
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .news-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+    overflow-y: auto;
+    max-height: 200px;
+  }
+  
+  .news-box ul li {
+    padding: 8px 0;
+    font-size: 15px;
+  }
+  
+  .news-box ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .news-box ul li a:hover {
+    color: #ff5722;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .bottom-row {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .bottom-row {
+      grid-template-columns: 1fr;
+    }
+  }
+  .news-box.economic-times {  
+    background: linear-gradient(135deg, #ffb347, #ff6a00); /* Gold to Deep Orange */
+  }
+  
+  .news-box.the-hindu {  
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Purple to Blue */
+  }
+  
+  .news-box.times-of-india {  
+    background: linear-gradient(135deg, #ff416c, #ff4b2b); /* Pink to Red */
+  }
+  
+  .news-box.sportstar {  
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Light Blue to Dark Blue */
+  }
+  
+  .news-box.espn-cricinfo {  
+    background: linear-gradient(135deg, #ff0080, #8000ff); /* Vibrant Magenta to Electric Blue */
+  }
+  
+  
+  .news-box.ndtv {  
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Dark Grey to Blue */
+  }
+
+  .news-box.dainik-bhaskar {  
+    background: linear-gradient(135deg, #ff512f, #dd2476); /* Bright Red to Vibrant Pink */
+  }
+  
+  .news-box.hindustan {  
+    background: linear-gradient(135deg, #00f260, #0575e6); /* Neon Green to Electric Blue */
+  }
+  
+  .news-box.divya-marathi {  
+    background: linear-gradient(135deg, #fcee21, #ff7f00); /* Bright Yellow to Deep Orange */
+  }
+  
+  
+  
+  /* Optional: Add a subtle box shadow for depth */
+  .news-box {
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .container {
+    background-image: url('homeBG.jpg'); /* Add your image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .highlight {
+    background-color: yellow;
+    font-weight: bold;
+    color: black;
+    padding: 2px 4px;
+    border-radius: 3px;
+  }
+  
+  
+  /* Popup Overlay */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(8px);
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  /* Popup Content */
+  .modal-content {
+    position: relative;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    border-radius: 12px;
+    width: 60%;
+    max-width: 700px;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    animation: slideUp 0.4s ease-in-out;
+  }
+  
+  /* Close Button */
+  .close-btn {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .close-btn:hover {
+    transform: scale(1.2);
+    color: #ff5e5e;
+  }
+  
+  /* Popup Title (Newspaper Name) */
+  .modal-content h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Headline */
+  #popup-headline {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 10px;
+  }
+  
+  /* News Image */
+  #popup-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: none; /* Hidden by default */
+  }
+  
+  /* News Description */
+  #popup-description {
+    font-size: 18px;
+    color: white;
+    line-height: 1.5;
+    text-align: justify;
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 5px;
+  }
+  
+  /* Navigation Buttons */
+  .pagination-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  #prev-btn, #next-btn {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 120px;
+  }
+  #next-btn {
+    margin-left: auto;
+    align-items: end;
+  }
+  
+  #prev-btn:hover, #next-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+  }
+  
+  .pagination-buttons {
+    display: flex;
+    justify-content: space-between; /* Moves 'Prev' to left and 'Next' to right */
+    margin-top: 15px;
+  }
+  #prev-btn, #next-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background: #007bff; /* Blue background */
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  #prev-btn:hover, #next-btn:hover {
+    background: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Entrance Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background: linear-gradient(135deg, #2b5876, #4e4376);
+    color: #fff;
+    width: 50%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+  }
+  
+  /* Show Modal */
+  .modal.show {
+    display: flex;
+    opacity: 1;
+  }
+  
+  .modal.show .modal-content {
+    transform: scale(1);
+    opacity: 1;
+    animation: bounce 0.5s ease-out;
+  }
+  
+  /* Bounce Effect */
+  @keyframes bounce {
+    0% { transform: scale(0.8); }
+    60% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  /* Shattering Pieces */
+  .shatter-piece {
+    position: absolute;
+    background: inherit;
+    opacity: 1;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+    z-index: 1100; /* Ensure it's above everything */
+    overflow: hidden;
+  }
+  
+  /* Different colors for pieces */
+  .shatter-piece:nth-child(1) { background: linear-gradient(135deg, #ff6b6b, #ffb400); }
+  .shatter-piece:nth-child(2) { background: linear-gradient(135deg, #ffb400, #ff6b6b); }
+  .shatter-piece:nth-child(3) { background: linear-gradient(135deg, #6b6bff, #00c9ff); }
+  .shatter-piece:nth-child(4) { background: linear-gradient(135deg, #00c9ff, #6b6bff); }
+  .shatter-piece:nth-child(5) { background: linear-gradient(135deg, #f76b1c, #fad961); }
+  .shatter-piece:nth-child(6) { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+  .shatter-piece:nth-child(7) { background: linear-gradient(135deg, #f02fc2, #6094ea); }
+  .shatter-piece:nth-child(8) { background: linear-gradient(135deg, #ff4b1f, #1fddff); }
+  
+  
+  .visit-site {
+    position: absolute;
+    left: 40%;
+    transform: translateX(-50%); /* Center horizontally */
+    background: #007bff;
+    color: white;
+    border: none;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .visit-site:hover {
+    background-color: #e64a19;
+  }
+  
+  .ss-btn {
+    position: absolute;
+    left: 60%;
+    transform: translateX(-50%); /* Center horizontally */
+    background: #007bff;
+    color: white;
+    border: none;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .ss-btn:hover {
+    background-color: #e64a19;
+  }
+  
+  @media (max-width: 768px) {
+    .news-box {
+        max-width: 100%;
+    }
+}
+.modal-content {
+  width: 90%;
+  max-width: 500px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .news-box {
+      width: 100%; /* Full width on small screens */
+      padding: 10px; /* Adjust padding */
+  }
+}
+
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 20px;
+}
