@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+    background-color: #9900ff ;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+  }
+  .notes-container {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  .note {
+    background: linear-gradient(45deg, #ffcc70, #ffda79);
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    width: 150px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    cursor: text;
+  }
+  .note:nth-child(2) {
+    background: linear-gradient(45deg, #9fa2ff, #b0b3ff);
+  }
+  .note:nth-child(3) {
+    background: linear-gradient(45deg, #c3f7ff, #d2fcff);
+  }
+  .note:nth-child(4) {
+    background: linear-gradient(45deg, #6cb5ff, #8cc8ff);
+  }
+  .note span {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+  }
+  .add-note-section {
+    text-align: center;
+    margin: 20px;
+  }
+  .add-note-section button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .info {
+    font-size: 14px;
+    color: lightgray;
+  }
+  .topnav {
+    background-color: #000000;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .topnav nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .topnav a {
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .topnav a:hover {
+    background-color: #c4bfbfe2;
+  }
+  
+  .nav-btn {
+    background-color: #9900ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .nav-btn:hover {
+    background-color: #8cc8ff; /* Change background on hover */
+    color: black; /* Change text color on hover */
+    transition: 0.2s ease-in-out; /* Smooth transition */
+}
